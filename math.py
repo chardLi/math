@@ -428,8 +428,7 @@ if __name__ == '__main__':
     file = codecs.open(r'./docs/index.html','w',encoding='utf-8')
     file.write(template)
     file.close()
-    a=(os.system(r'git commit -am "auto update"'))
-    print(a)
+    print(os.system(r'git commit -am "auto update"'))
     print(os.system(r'git push -f'))
     print(os.system(r'dir'))
 
