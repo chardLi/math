@@ -429,6 +429,6 @@ if __name__ == '__main__':
     file.write(template)
     file.close()
     os.system(r'git commit -am "auto update"')
-    os.system(r'git push -f')
+    os.system(r'git push')
 
 
