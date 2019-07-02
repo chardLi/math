@@ -1,5 +1,6 @@
 from urllib import  request
 from bs4 import BeautifulSoup
+import   os
 
 template='''<!DOCTYPE html>
 <html lang="en">
@@ -422,7 +423,10 @@ if __name__ == '__main__':
     printimg(img_a,imgtit)
 
     print(template)
-    file = open(r'./夏季实习/静态网页第一版/index.html','w')
+    file = open(r'./docs/静态网页第一版/index.html','w')
     file.write(template)
     file.close()
+    os.system(r'git commit -am "auto update"')
+    os.system(r'git push -f')
+
 
