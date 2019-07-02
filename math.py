@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from urllib import  request
 from bs4 import BeautifulSoup
 import   os
@@ -424,10 +425,12 @@ if __name__ == '__main__':
     printimg(img_a,imgtit)
 
     print(template)
-    file = codecs.open(r'./docs/静态网页第一版/index.html','w',encoding='utf-8')
+    file = codecs.open(r'./docs/index.html','w',encoding='utf-8')
     file.write(template)
     file.close()
-    os.system(r'git commit -am "auto update"')
-    os.system(r'git push -f')
+    a=(os.system(r'git commit -am "auto update"'))
+    print(a)
+    print(os.system(r'git push -f'))
+    print(os.system(r'dir'))
 
 
