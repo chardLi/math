@@ -642,7 +642,7 @@ def newspage():
         for j in range (0,16):
             temp[i]=temp[i].replace("{{font"+str(j)+"}}",'')
         temp[i]=temp[i].replace("{{title}}",title.text)
-        file = codecs.open(r'./docs/ensingle'+str(i)+'.html', 'w', encoding='utf-8')
+        file = codecs.open(r'./docs/math/ensingle'+str(i)+'.html', 'w', encoding='utf-8')
         file.write(temp[i])
         file.close()
 
